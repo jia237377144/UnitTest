@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.17.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Models\" />
+    <None Remove="Adaptors\" />
+    <None Remove="Utils\" />
+    <None Remove="Features\" />
+    <None Remove="Models\Restaurant\" />
+    <None Remove="Models\Dummy\" />
+    <None Remove="Models\Mail\" />
+    <None Remove="Models\Spy\" />
+    <None Remove="Models\Mock\" />
+    <None Remove="Moq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
+    <Folder Include="Adaptors\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Features\" />
+    <Folder Include="Models\Fake\" />
+    <Folder Include="Models\Dummy\" />
+    <Folder Include="Models\Stub\" />
+    <Folder Include="Models\Spy\" />
+    <Folder Include="Models\MockTest\" />
+  </ItemGroup>
+</Project>
